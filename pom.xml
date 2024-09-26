@@ -100,8 +100,18 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>dev.lavalink.youtube</groupId>
+			<artifactId>common</artifactId>
+			<version>1.8.2</version>
+		</dependency>
 	</dependencies>
 	<repositories>
+		<repository>
+			<id>arbjergDev-releases</id>
+			<name>Lavalink Repository</name>
+			<url>https://maven.lavalink.dev/releases</url>
+		</repository>
 		<repository>
 			<id>dv8tion</id>
 			<name>m2-dv8tion</name>

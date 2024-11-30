@@ -49,7 +49,7 @@ public class Skip implements ICommand {
             musicManager.scheduler.queue.clear();
         }else{
             musicManager.scheduler.nextTrack();
-            channel.sendMessage("```Skipped the current track. Now playing **" + musicManager.audioPlayer.getPlayingTrack().getInfo().title + "** by **" + musicManager.audioPlayer.getPlayingTrack().getInfo().author + "**.```").queue();
+            channel.sendMessage("```Skipped the current track. Now playing " + musicManager.audioPlayer.getPlayingTrack().getInfo().title + " by " + musicManager.audioPlayer.getPlayingTrack().getInfo().author + "```").queue();
         }
     }
 

@@ -214,8 +214,9 @@ public class SlashCommandListener extends ListenerAdapter {
         if(optionalPlaylist.isPresent()){
             Playlist playlist = optionalPlaylist.get();
             Play play = new Play();
+            event.reply("```Playing " + playlist.getName() +  "```").setEphemeral(true).queue();
             play.executePlaylist(event, playlist.getList(), playlist.getName());
-            //НЕ ВИВОДИТЬ ПОВІДОМЛЕННЯ - ОШИБКА
+
         }else{
             event.reply("```There is no such playlist```").setEphemeral(true).queue();
         }

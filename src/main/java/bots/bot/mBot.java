@@ -11,10 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan(basePackages = {"bots.bot.coin", "bots.bot", "bots.bot.config"})
 @SpringBootApplication
-
 public class mBot {
-    
-
 
     public static void main(String[] args) throws InterruptedException {
 

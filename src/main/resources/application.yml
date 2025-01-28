@@ -16,7 +16,7 @@ server:
     include-message: always
   port: 8080
 bot:
-  token:  <put your token here>
+  token:  "here is your own token"
 lavalink:
   server:
     sources:

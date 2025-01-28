@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/profiles
+    username: postgres
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+server:
+  error:
+    include-message: always
+  port: 8080
+bot:
+  token:  MTExNDYzMzIyOTk3MDk3Njg0OA.G-27ds.8dRgNNEfEL0aJDVfNMQxJJy8mkk963LYd-WSy8
+lavalink:
+  server:
+    sources:
+      youtube: false
+
+plugins:
+  youtube:
+    enabled: true # Whether this source can be used.
+    oauth:
+      enabled: true
+    allowSearch: true # Whether "ytsearch:" and "ytmsearch:" can be used.
+    allowDirectVideoIds: true # Whether just video IDs can match. If false, only complete URLs will be loaded.
+    allowDirectPlaylistIds: true # Whether just playlist IDs can match. If false, only complete URLs will be loaded.
+    # The clients to use for track loading. See below for a list of valid clients.
+    # Clients are queried in the order they are given (so the first client is queried first and so on...)
+    clients:
+      - MUSIC
+      - ANDROID_VR
+      - WEB
+      - WEBEMBEDDED
+

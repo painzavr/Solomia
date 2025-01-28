@@ -16,7 +16,7 @@ server:
     include-message: always
   port: 8080
 bot:
-  token:  MTExNDYzMzIyOTk3MDk3Njg0OA.G-27ds.8dRgNNEfEL0aJDVfNMQxJJy8mkk963LYd-WSy8
+  token:  <put your token here>
 lavalink:
   server:
     sources:
